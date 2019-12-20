@@ -1,0 +1,11 @@
+nav.navbar {
+  margin-bottom: 0;
+}
+.nav-link {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+.navbar-brand {
+  font-size: 18 px;
+  font-family: 'Nunito', sans-serif;
+}
