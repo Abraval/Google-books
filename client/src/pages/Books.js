@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SearchCard from "../components/SearchCard";
 import SearchResult from "../components/SearchResult";
 import BookItemCard from "../components/BookItemCard";
-import SaveCard from "../components/SaveResult";
+import SaveCard from "../components/SavedResult";
 import API from "../utils/API";
 
 class Books extends Component {
