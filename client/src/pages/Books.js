@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import SearchCard from "../components/SearchCard";
+import SearchCard from "../components/Search";
 import SearchResult from "../components/SearchResult";
-import BookItemCard from "../components/BookItemCard";
-import SaveCard from "../components/SavedResult";
+import BookItemCard from "../components/BookItemCard/index";
+import SaveCard from "../components/SavedResult/index";
 import API from "../utils/API";
 
 class Books extends Component {
@@ -114,7 +114,7 @@ class Books extends Component {
                   );
                 })
               ) : (
-                <h3>No Results to Display</h3>
+                <h3>No Books match your search</h3>
               )}
             </SearchResult>
           </div>
@@ -131,7 +131,7 @@ class Books extends Component {
                     thumbnail={
                       book.thumbnail
                         ? book.thumbnail
-                        : "http://blogs.smithsonianmag.com/design/files/2013/03/smiley-face-1.jpg"
+                        : "http://knowledgequest.aasl.org/wp-content/uploads/2015/01/books.png"
                     }
                     description={book.description}
                     delete={this.handleDelete}

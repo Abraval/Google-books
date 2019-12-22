@@ -2,23 +2,21 @@ import React from "react";
 
 function SearchCard(props) {
   return (
-    <div className="container mt-3">
-      <div className="card">
-        <h5 className="card-header">Book Search</h5>
+    <div className="container w-50 mt-3">
+      <div className="card border-0">
         <div className="card-body">
           <form onSubmit={props.onClick}>
-            <div className="form-group">
-              <label>Book</label>
+            <div className="form-group input-group input-group-lg shadow">
               <input
                 type="text"
-                className="form-control"
+                className="form-control border rounded border-dark"
                 value={props.value}
                 onChange={props.onChange}
-                placeholder="Example: Harry Potter"
+                placeholder="Enter book name here"
                 required
               />
             </div>
-            <button className="btn btn-sm float-right btn-info" type="submit">
+            <button className="btn float-right btn-dark shadow" type="submit">
               Search
             </button>
           </form>

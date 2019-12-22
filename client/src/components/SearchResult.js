@@ -2,12 +2,12 @@ import React from "react";
 
 function SearchResult({children}) {  
     return (
-      <div className="container mt-3">
-        <div className="card">
-          <h5 className="card-header">Results</h5>
+      
+        <div className="card border-0">
+          <h5 className="card-header border-0 text-white bg-dark py-4 px-5">RESULTS</h5>
           <div className="card-body">{children}</div>
         </div>
-      </div>
+
     );
 }
 

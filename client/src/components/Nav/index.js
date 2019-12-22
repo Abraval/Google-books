@@ -3,12 +3,21 @@ import "./style.css";
 
 function Nav() {
   return (
-    <nav className="nav navbar-expand-lg navbar-dark">
-      <a className="nav-link text-info" href="/">
-        <h3>Google Books</h3>
+    <nav className="nav navbar-expand-lg navbar-light mt-2 border-bottom">
+      <a className="navbar-brand text-dark ml-5" href="/">BOOK SEARCH
       </a>
-      <a className="nav-link mt-2 text-info" href="/">Search</a>
-      <a className="nav-link mt-2 text-info" href="/saved">Saved</a>
+      <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item active">
+          <a class="nav-link mt-2 text-dark" href="/">
+            Search
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-2 text-dark" href="/saved">
+            Saved
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }
