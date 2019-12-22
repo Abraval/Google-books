@@ -105,7 +105,7 @@ class Books extends Component {
                       thumbnail={
                         book.volumeInfo.imageLinks
                           ? book.volumeInfo.imageLinks.thumbnail
-                          : "https://adoptionsupport.org/wp-content/uploads/2015/12/Book-tower.jpg"
+                          : "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/02/22/istock-486776676.jpg"
                       }
                       description={book.volumeInfo.description}
                       save={this.handleSave}
@@ -114,7 +114,7 @@ class Books extends Component {
                   );
                 })
               ) : (
-                <h3>No Books match your search</h3>
+                <h5 className="ml-4">No match. Try again.</h5>
               )}
             </SearchResult>
           </div>
