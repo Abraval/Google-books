@@ -105,7 +105,7 @@ class Books extends Component {
                       thumbnail={
                         book.volumeInfo.imageLinks
                           ? book.volumeInfo.imageLinks.thumbnail
-                          : "http://blogs.smithsonianmag.com/design/files/2013/03/smiley-face-1.jpg"
+                          : "https://adoptionsupport.org/wp-content/uploads/2015/12/Book-tower.jpg"
                       }
                       description={book.volumeInfo.description}
                       save={this.handleSave}
