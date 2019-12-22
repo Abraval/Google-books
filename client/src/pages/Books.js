@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import SearchCard from "../components/Search";
+import Search from "../components/Search";
 import SearchResult from "../components/SearchResult";
-import BookItemCard from "../components/BookItemCard/index";
+import BookCard from "../components/BookCard/index";
 import SaveCard from "../components/SavedResult/index";
 import API from "../utils/API";
 
@@ -83,7 +83,7 @@ class Books extends Component {
       <div>
         {window.location.pathname === "/" ? (
           <div>
-            <SearchCard
+            <Search
               value={this.state.bookSearch}
               onChange={this.handleInputChange}
               onClick={this.handleSearch}
@@ -93,7 +93,7 @@ class Books extends Component {
               {this.state.results.length ? (
                 this.state.results.map((book, i) => {
                   return (
-                    <BookItemCard
+                    <BookCard
                       key={book.id}
                       title={book.volumeInfo.title}
                       author={
@@ -114,7 +114,7 @@ class Books extends Component {
                   );
                 })
               ) : (
-                <h5 className="ml-4">No match. Try again.</h5>
+                <div></div>
               )}
             </SearchResult>
           </div>
@@ -123,7 +123,7 @@ class Books extends Component {
             {this.state.savedBooks.length ? (
               this.state.savedBooks.map((book, i) => {
                 return (
-                  <BookItemCard
+                  <BookCard
                     key={book._id}
                     title={book.title}
                     author={book.author}
@@ -131,7 +131,7 @@ class Books extends Component {
                     thumbnail={
                       book.thumbnail
                         ? book.thumbnail
-                        : "http://knowledgequest.aasl.org/wp-content/uploads/2015/01/books.png"
+                        : "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/02/22/istock-486776676.jpg"
                     }
                     description={book.description}
                     delete={this.handleDelete}
@@ -140,7 +140,7 @@ class Books extends Component {
                 );
               })
             ) : (
-              <h3>No Saved Books</h3>
+              <div></div>
             )}
           </SaveCard>
         )}

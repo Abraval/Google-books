@@ -4,7 +4,20 @@
   box-shadow: 0 5px 8px rgb(2, 2, 2), 0 5px 8px rgb(0, 0, 0);
   text-align: left;
 }
-h6, h5, p, a{
+h6,
+h5,
+p,
+a {
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+
+.btn:hover {
+  transform: translateY(3px);
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+.btn {
   font-family: "Montserrat";
   font-weight: lighter;
 }
