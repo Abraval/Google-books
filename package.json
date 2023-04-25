@@ -22,8 +22,14 @@
     "axios": "^0.18.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.8.2",
-    "node": "14.x"
+    "mongoose": "^5.8.2"
 
-  }
+  },
+  "engines": {
+  "node": "14.21.3",
+  "npm": "9.x"
+},
+  "scripts": {
+  "heroku-postbuild": "npm ci && npm run build"
+}
 }
