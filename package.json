@@ -29,7 +29,11 @@
   "node": "14.21.3",
   "npm": "9.x"
 },
+{
   "scripts": {
-  "heroku-postbuild": "npm ci && npm run build"
+    "start": "node app.js", // Replace with your start script
+    "build": "npm run lint && npm run test && npm run compile" // Define your build script here
+  },
+  // Rest of the package.json file
 }
 }
